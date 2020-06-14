@@ -92,7 +92,8 @@ public class Cliente extends Thread{
 
                 byte[] buf = new byte[DGRAM_BUF_LEN];//crea arreglo de bytes 
     			if(init){
-    				msg = "<inicio>"+name;
+                    msg = "<inicio>"+name;
+                    System.out.println(msg);
     				init = false;
     			}else{
     				msg = s.nextLine();
